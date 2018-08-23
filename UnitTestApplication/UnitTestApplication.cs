@@ -131,5 +131,23 @@ namespace UnitTestApplication
             bool result = Program.IsPrime(source);
             Assert.AreEqual(result, expected);
         }
+
+        [TestMethod]
+        public void TestMethodPrime_23()
+        {
+            const int source = 23;
+            const bool expected = true;
+            bool result = Program.IsPrime(source);
+            Assert.AreEqual(result, expected);
+        }
+
+        [TestMethod]
+        public void TestMethodPrime_29()
+        {
+            const int source = 29;
+            const bool expected = true;
+            bool result = Program.IsPrime(source);
+            Assert.AreEqual(result, expected);
+        }
     }
 }
