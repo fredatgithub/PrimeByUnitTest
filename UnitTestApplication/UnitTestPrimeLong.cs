@@ -23,5 +23,23 @@ namespace UnitTestApplication
             bool result = Program.IsPrime(source);
             Assert.AreEqual(result, expected);
         }
+
+        [TestMethod]
+        public void TestMethod_Prime_Ulong_3_times_int_max_value()
+        {
+            const ulong source = (ulong)int.MaxValue * 3;
+            const bool expected = false;
+            bool result = Program.IsPrime(source);
+            Assert.AreEqual(result, expected);
+        }
+
+        [TestMethod]
+        public void TestMethod_Prime_Ulong_7_times_int_max_value()
+        {
+            const ulong source = (ulong)int.MaxValue * 7;
+            const bool expected = false;
+            bool result = Program.IsPrime(source);
+            Assert.AreEqual(result, expected);
+        }
     }
 }

@@ -21,11 +21,8 @@ namespace ConsoleApp472
             Console.WriteLine("press a key to exit:");
             Console.ReadKey();
         }
-
-        private static string Negate(bool trueOrFalse)
-        {
-            return trueOrFalse ? string.Empty : " not";
-        }
+        
+        private static string Negate(bool trueOrFalse) => trueOrFalse ? string.Empty : " not";
 
         public static bool IsPrime(int number)
         {
