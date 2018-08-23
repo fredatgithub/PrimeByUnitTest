@@ -6,7 +6,7 @@ namespace ConsoleApp472
     {
         static void Main(string[] args)
         {
-            for (int  i = 0;  i < 15 ;  i++)
+            for (int  i = 0;  i < 20 ;  i++)
             {
                 if (IsPrime(i))
                 {
@@ -20,6 +20,7 @@ namespace ConsoleApp472
 
         public static bool IsPrime(int number)
         {
+            // process false numbers first
             if (number < 2) return false;
             if (number == 2 || number == 3 || number == 5) return true;
             if (number % 2 == 0) return false;
