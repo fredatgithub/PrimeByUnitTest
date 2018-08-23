@@ -2,11 +2,11 @@
 
 namespace ConsoleApp472
 {
-   public class Program
+    public class Program
     {
         static void Main()
         {
-            for (int  i = 0;  i < 60 ;  i++)
+            for (int i = 0; i < 60; i++)
             {
                 if (IsPrime(i))
                 {
@@ -14,16 +14,17 @@ namespace ConsoleApp472
                 }
             }
 
-            if (IsPrime(int.MaxValue))
-            {
-                Console.WriteLine($"int.MaxValue is prime: {int.MaxValue}");
-            }
-
-            Console.WriteLine($"long.MaxValue is not a prime: {long.MaxValue}");
-            Console.WriteLine($"Ulong.MaxValue is not a prime: {ulong.MaxValue}");
+            Console.WriteLine($"int.MaxValue is{Negate(IsPrime(int.MaxValue))} a prime: {int.MaxValue}");
+            Console.WriteLine($"long.MaxValue is{Negate(IsPrime(long.MaxValue))} a prime: {long.MaxValue}");
+            Console.WriteLine($"Ulong.MaxValue is{Negate(IsPrime(ulong.MaxValue))} a prime: {ulong.MaxValue}");
 
             Console.WriteLine("press a key to exit:");
             Console.ReadKey();
+        }
+
+        private static string Negate(bool trueOrFalse)
+        {
+            return trueOrFalse ? string.Empty : " not";
         }
 
         public static bool IsPrime(int number)
