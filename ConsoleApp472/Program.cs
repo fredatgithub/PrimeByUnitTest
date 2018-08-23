@@ -19,6 +19,9 @@ namespace ConsoleApp472
                 Console.WriteLine($"int.MaxValue is prime: {int.MaxValue}");
             }
 
+            Console.WriteLine($"long.MaxValue is not a prime: {long.MaxValue}");
+            Console.WriteLine($"Ulong.MaxValue is not a prime: {ulong.MaxValue}");
+
             Console.WriteLine("press a key to exit:");
             Console.ReadKey();
         }
@@ -46,6 +49,21 @@ namespace ConsoleApp472
             if (number % 2 == 0) return false;
             if (number % 5 == 0) return false;
             for (long i = 3; i <= Math.Abs(Math.Sqrt(number)); i = i + 2)
+            {
+                if (number % i == 0) return false;
+            }
+
+            return true;
+        }
+
+        public static bool IsPrime(ulong number)
+        {
+            // process false numbers first
+            if (number < 2) return false;
+            if (number == 2 || number == 3 || number == 5) return true;
+            if (number % 2 == 0) return false;
+            if (number % 5 == 0) return false;
+            for (ulong i = 3; i <= Math.Abs(Math.Sqrt(number)); i = i + 2)
             {
                 if (number % i == 0) return false;
             }

@@ -49,7 +49,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTestApplication.cs" />
+    <Compile Include="UnitTestPrimeLong.cs" />
+    <Compile Include="UnitTestPrimeInt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,7 +4,7 @@ using ConsoleApp472;
 namespace UnitTestApplication
 {
     [TestClass]
-    public class UnitTestApplication
+    public class UnitTestPrimeInt
     {
         [TestMethod]
         public void TestMethod_Prime_0()
