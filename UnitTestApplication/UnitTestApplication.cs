@@ -7,7 +7,7 @@ namespace UnitTestApplication
     public class UnitTestApplication
     {
         [TestMethod]
-        public void TestMethodPrime_0()
+        public void TestMethod_Prime_0()
         {
             const int source = 0;
             const bool expected = false;
@@ -16,7 +16,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_1()
+        public void TestMethod_Prime_1()
         {
             const int source = 1;
             const bool expected = false;
@@ -25,7 +25,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_2()
+        public void TestMethod_Prime_2()
         {
             const int source = 2;
             const bool expected = true;
@@ -34,7 +34,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_3()
+        public void TestMethod_Prime_3()
         {
             const int source = 3;
             const bool expected = true;
@@ -43,7 +43,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_4()
+        public void TestMethod_Prime_4()
         {
             const int source = 4;
             const bool expected = false;
@@ -52,7 +52,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_5()
+        public void TestMethod_Prime_5()
         {
             const int source = 5;
             const bool expected = true;
@@ -61,7 +61,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_6()
+        public void TestMethod_Prime_6()
         {
             const int source = 6;
             const bool expected = false;
@@ -70,7 +70,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_7()
+        public void TestMethod_Prime_7()
         {
             const int source = 7;
             const bool expected = true;
@@ -79,7 +79,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_9()
+        public void TestMethod_Prime_9()
         {
             const int source = 9;
             const bool expected = true;
@@ -88,7 +88,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_11()
+        public void TestMethod_Prime_11()
         {
             const int source = 11;
             const bool expected = true;
@@ -97,7 +97,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_13()
+        public void TestMethod_Prime_13()
         {
             const int source = 13;
             const bool expected = true;
@@ -106,7 +106,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_15()
+        public void TestMethod_Prime_15()
         {
             const int source = 15;
             const bool expected = false;
@@ -115,7 +115,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_17()
+        public void TestMethod_Prime_17()
         {
             const int source = 17;
             const bool expected = true;
@@ -124,7 +124,7 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethodPrime_19()
+        public void TestMethod_Prime_19()
         {
             const int source = 19;
             const bool expected = true;
