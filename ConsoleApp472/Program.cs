@@ -22,7 +22,7 @@ namespace ConsoleApp472
             Console.ReadKey();
         }
 
-        private static string Negate(bool trueOrFalse) => trueOrFalse ? string.Empty : " not";
+        public static string Negate(bool trueOrFalse) => trueOrFalse ? string.Empty : " not";
 
         public static bool IsPrime(int number)
         {
@@ -30,8 +30,9 @@ namespace ConsoleApp472
             if (number < 2) return false;
             if (number == 2 || number == 3 || number == 5) return true;
             if (number % 2 == 0) return false;
+            if (number % 3 == 0) return false;
             if (number % 5 == 0) return false;
-            for (int i = 3; i <= Math.Abs(Math.Sqrt(number)); i = i + 2)
+            for (int i = 3; i < Math.Abs(Math.Sqrt(number)); i = i + 2)
             {
                 if (number % i == 0) return false;
             }

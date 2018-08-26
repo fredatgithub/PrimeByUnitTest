@@ -16,30 +16,52 @@ namespace UnitTestApplication
         }
 
         [TestMethod]
-        public void TestMethod_Prime_Ulong_max_value()
+        public void TestMethod_Prime_long_1011001110001111()
         {
-            const ulong source = ulong.MaxValue;
-            const bool expected = false;
+            const long source = 1011001110001111;
+            const bool expected = true;
             bool result = Program.IsPrime(source);
             Assert.AreEqual(result, expected);
         }
 
         [TestMethod]
-        public void TestMethod_Prime_Ulong_3_times_int_max_value()
+        public void TestMethod_Prime_long_1090109110921093()
         {
-            const ulong source = (ulong)int.MaxValue * 3;
-            const bool expected = false;
+            const long source = 1090109110921093;
+            const bool expected = true;
             bool result = Program.IsPrime(source);
             Assert.AreEqual(result, expected);
         }
 
         [TestMethod]
-        public void TestMethod_Prime_Ulong_7_times_int_max_value()
+        public void TestMethod_Prime_long_1111235916285193()
         {
-            const ulong source = (ulong)int.MaxValue * 7;
-            const bool expected = false;
+            const long source = 1111235916285193;
+            const bool expected = true;
             bool result = Program.IsPrime(source);
             Assert.AreEqual(result, expected);
         }
+
+        [TestMethod]
+        public void TestMethod_Prime_long_100123456789()
+        {
+            const long source = 100123456789;
+            const bool expected = true;
+            bool result = Program.IsPrime(source);
+            Assert.AreEqual(result, expected);
+        }
+
+        /**
+         * 
+         *  prime
+101111111111 prime
+101234567897 prime
+101601701401 prime
+101740496633 prime
+103723971119 prime
+105840677923 prime
+107928278317 prime
+109297270343 prime 
+         * */
     }
 }
