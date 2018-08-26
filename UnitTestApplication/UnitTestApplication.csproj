@@ -50,6 +50,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UnitTestPrimeWithEqualSignUlong.cs" />
     <Compile Include="UnitTestNegate.cs" />
     <Compile Include="UnitTestPrimeLong.cs" />
     <Compile Include="UnitTestPrimeInt.cs" />
