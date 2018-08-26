@@ -70,26 +70,26 @@ namespace ConsoleApp472
             return true;
         }
 
-        public static bool IsPrime<T>(T number)
-        {
-            if (T is int number || T is long number || T is ulong number)
-            {
-                // process false numbers first
-                if (number < 2) return false;
-                if (number == 2 || number == 3 || number == 5) return true;
-                if (number % 2 == 0) return false;
-                if (number % 5 == 0) return false;
-                for (T i = 3; i <= Math.Abs(Math.Sqrt(number)); i = i + 2)
-                {
-                    if (number % i == 0) return false;
-                }
-            }
-            else
-            {
-                return false;
-            }
+        //public static bool IsPrime<T>(T number)
+        //{
+        //    if (T is int number || T is long number || T is ulong number)
+        //    {
+        //        // process false numbers first
+        //        if (number < 2) return false;
+        //        if (number == 2 || number == 3 || number == 5) return true;
+        //        if (number % 2 == 0) return false;
+        //        if (number % 5 == 0) return false;
+        //        for (T i = 3; i <= Math.Abs(Math.Sqrt(number)); i = i + 2)
+        //        {
+        //            if (number % i == 0) return false;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
 
-            return true;
-        }
+        //    return true;
+        //}
     }
 }
