@@ -48,7 +48,7 @@ namespace ConsoleApp472
             if (number == 2 || number == 3 || number == 5) return true;
             if (number % 2 == 0) return false;
             if (number % 5 == 0) return false;
-            for (long i = 3; i <= Math.Abs(Math.Sqrt(number)); i = i + 2)
+            for (long i = 3; i < Math.Abs(Math.Sqrt(number)); i = i + 2)
             {
                 if (number % i == 0) return false;
             }
@@ -63,7 +63,54 @@ namespace ConsoleApp472
             if (number == 2 || number == 3 || number == 5) return true;
             if (number % 2 == 0) return false;
             if (number % 5 == 0) return false;
+            for (ulong i = 3; i < Math.Abs(Math.Sqrt(number)); i = i + 2)
+            {
+                if (number % i == 0) return false;
+            }
+
+            return true;
+        }
+
+        public static bool IsPrimeWithEgalSign(ulong number)
+        {
+            // process false numbers first
+            if (number < 2) return false;
+            if (number == 2 || number == 3 || number == 5) return true;
+            if (number % 2 == 0) return false;
+            if (number % 5 == 0) return false;
             for (ulong i = 3; i <= Math.Abs(Math.Sqrt(number)); i = i + 2)
+            {
+                if (number % i == 0) return false;
+            }
+
+            return true;
+        }
+
+        public static bool IsPrimeWithEgalSign(long number)
+        {
+            // process false numbers first
+            if (number < 2) return false;
+
+            if (number == 2 || number == 3 || number == 5) return true;
+            if (number % 2 == 0) return false;
+            if (number % 5 == 0) return false;
+            for (long i = 3; i < Math.Abs(Math.Sqrt(number)); i = i + 2)
+            {
+                if (number % i == 0) return false;
+            }
+
+            return true;
+        }
+
+        public static bool IsPrimeWithEgalSign(int number)
+        {
+            // process false numbers first
+            if (number < 2) return false;
+            if (number == 2 || number == 3 || number == 5) return true;
+            if (number % 2 == 0) return false;
+            if (number % 3 == 0) return false;
+            if (number % 5 == 0) return false;
+            for (int i = 3; i < Math.Abs(Math.Sqrt(number)); i = i + 2)
             {
                 if (number % i == 0) return false;
             }
