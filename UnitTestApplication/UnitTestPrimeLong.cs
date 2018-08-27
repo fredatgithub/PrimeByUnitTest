@@ -7,6 +7,15 @@ namespace UnitTestApplication
     public class UnitTestPrimeLong
     {
         [TestMethod]
+        public void TestMethod_Prime_9()
+        {
+            const long source = 9;
+            const bool expected = false;
+            bool result = Program.IsPrime(source);
+            Assert.AreEqual(result, expected);
+        }
+
+        [TestMethod]
         public void TestMethod_Prime_long_max_value()
         {
             const long source = long.MaxValue;
