@@ -80,7 +80,7 @@ namespace ConsoleApp472
             if (number == 2 || number == 3 || number == 5) return true;
             if (number % 2 == 0) return false;
             if (number % 5 == 0) return false;
-            for (ulong i = 7; i <= Math.Abs(Math.Sqrt(number)); i = i + 2)
+            for (ulong i = 3; i <= Math.Abs(Math.Sqrt(number)); i = i + 2)
             {
                 if (number % i == 0) return false;
             }
